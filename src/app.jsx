@@ -1,5 +1,8 @@
 import React from 'react'
+import Counter from './counter'
 
-const App = ({greeting}) => <div>{ greeting }</div>
+const App = () => <>
+  <Counter />
+</>
 
 export default App
