@@ -6,5 +6,16 @@ module.exports = {
     [ "@babel/preset-env", {
       modules: isTest ? 'commonjs' : false
     }]
+  ],
+  plugins: isTest ? ["@babel/transform-runtime"] : []
+}
+
+/* add to .browserslistrc
+"targets": {
+  "browsers": [
+    ">0.25%",
+    "not ie 11",
+    "not op_mini all"
   ]
 }
+*/
