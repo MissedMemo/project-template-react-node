@@ -1,4 +1,13 @@
 {
+  "name": "react-node-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/MissedMemo/project-template-react-node.git",
+  "author": "AndyL <missedmemo@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server"
+  },
   "dependencies": {
     "express": "^4.16.4"
   }
