@@ -7,7 +7,7 @@ module.exports = {
       modules: isTest ? 'commonjs' : false
     }]
   ],
-  plugins: isTest ? ["@babel/transform-runtime"] : []
+  plugins: isTest ? ["@babel/plugin-transform-runtime"] : []
 }
 
 /* add to .browserslistrc
