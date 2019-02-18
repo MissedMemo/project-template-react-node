@@ -10,7 +10,7 @@ const Counter = () => {
 
   return <div>
     <button onClick={increment}>+1</button>
-    <div>
+    <div data-testid='output'>
       { count }
     </div>
   </div>
