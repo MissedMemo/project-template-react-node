@@ -13,7 +13,7 @@ const Calculator = () => {
 
   return <>
     <button onClick={ recalculate }>Calculate</button>
-    <div>{ num }</div>
+    <div data-testid='output'>{ num }</div>
   </>
 }
 
