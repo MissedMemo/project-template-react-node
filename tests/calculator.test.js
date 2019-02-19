@@ -11,7 +11,7 @@ test( 'value should update asyncronously on button click', () => {
   fireEvent.click( btn )
   waitForDomChange({ output })
     .then( () => {
-      console.log('finished wait!')
+      console.log('FAIL: we never get here!')
       expect(output).toHaveTextContent('2')
     })
 })
