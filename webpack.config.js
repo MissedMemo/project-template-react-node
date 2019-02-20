@@ -1,5 +1,6 @@
 const htmlWebpackPlugin = require('html-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
+const appVersion = require("./package.json").version
 const { resolve } = require('path')
 
 const SOURCE_DIR = resolve('src')
@@ -7,7 +8,7 @@ const OUTPUT_DIR = resolve('dist')
 
 module.exports = {
   output: {
-    filename: 'bundle.js',
+    filename: `bundle.${appVersion}.js`,
     publicPath: '/'
   },
   module: {
