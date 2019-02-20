@@ -1,4 +1,5 @@
 const htmlWebpackPlugin = require('html-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
 const { resolve } = require('path')
 
 const SOURCE_DIR = resolve('src')
@@ -22,6 +23,7 @@ module.exports = {
     extensions: [ '.js', '.jsx' ]
   },
   plugins: [
+    new CleanWebpackPlugin(OUTPUT_DIR), // Eliminate old bundle versions
     new htmlWebpackPlugin({
       template: 'webpack.html.template'
     })
